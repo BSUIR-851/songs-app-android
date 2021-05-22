@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.songs.details.SongsDetailsFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/safe_area_x"
+            android:paddingTop="@dimen/safe_area_x"
+            android:paddingEnd="@dimen/safe_area_x"
+            android:paddingBottom="@dimen/safe_area_x">
+
+            <ImageView
+                android:id="@+id/fragment_songs_details_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/section_spacing"
+                android:src="@drawable/ic_songs_cell"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textSize="@dimen/sub_header_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fragment_songs_details_text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/element_spacing"
+                    android:text="SONG NAME" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/element_spacing"
+                    android:text="@string/author"
+                    android:textSize="@dimen/sub_header_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fragment_songs_details_text_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/element_spacing"
+                    android:text="SONG AUTHOR" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/element_spacing"
+                    android:text="@string/description"
+                    android:textSize="@dimen/sub_header_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fragment_songs_details_text_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/element_spacing"
+                    android:text="SONG DESCRIPTION" />
+
+                <TextView
+                    android:id="@+id/textView6year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/element_spacing"
+                    android:text="@string/year"
+                    android:textSize="@dimen/sub_header_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fragment_songs_details_text_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/element_spacing"
+                    android:text="SONG YEAR" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_songs_details_video_stack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/video"
+                    android:textSize="@dimen/sub_header_font_size"
+                    android:textStyle="bold" />
+
+                <VideoView
+                    android:id="@+id/fragment_songs_details_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/video_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/element_spacing"
+                    android:foregroundGravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_songs_details_release_stack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/section_spacing"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/release"
+                    android:textSize="@dimen/sub_header_font_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fragment_songs_details_text_release_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/element_spacing"
+                    android:text="NOTE"
+                    android:textSize="@dimen/text_font_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/element_spacing"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/latitude"
+                        android:textSize="@dimen/text_font_size" />
+
+                    <TextView
+                        android:id="@+id/fragment_songs_details_text_release_latitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textAlignment="textEnd"
+                        android:textSize="@dimen/text_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/element_spacing"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/longitude"
+                        android:textSize="@dimen/text_font_size" />
+
+                    <TextView
+                        android:id="@+id/fragment_songs_details_text_release_longitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2"
+                        android:textAlignment="textEnd"
+                        android:textSize="@dimen/text_font_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

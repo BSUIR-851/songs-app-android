@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/element_spacing"
+        android:paddingTop="@dimen/element_spacing"
+        android:paddingBottom="@dimen/element_spacing"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/element_users_cell_photo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="@dimen/element_spacing"
+            android:src="@drawable/ic_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/element_users_cell_text_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mail@mail.ru"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/element_users_cell_photo"
+                app:layout_constraintStart_toStartOf="@+id/element_users_cell_photo"
+                app:layout_constraintTop_toBottomOf="@+id/element_users_cell_photo" />
+
+            <TextView
+                android:id="@+id/element_users_cell_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="owi64hwmloz6rb3f72ejfqtp4o"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/element_users_cell_photo"
+                app:layout_constraintStart_toStartOf="@+id/element_users_cell_photo"
+                app:layout_constraintTop_toBottomOf="@+id/element_users_cell_photo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/element_users_cell_text_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_role"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="@dimen/inner_element_spacing"
+                    app:layout_constraintEnd_toEndOf="@+id/element_users_cell_photo"
+                    app:layout_constraintStart_toStartOf="@+id/element_users_cell_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/element_users_cell_photo" />
+
+                <TextView
+                    android:id="@+id/element_users_cell_text_role_status_separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="@dimen/inner_element_spacing"
+                    app:layout_constraintEnd_toEndOf="@+id/element_songs_cell_text_name"
+                    app:layout_constraintStart_toStartOf="@+id/element_songs_cell_text_name"
+                    app:layout_constraintTop_toBottomOf="@+id/element_songs_cell_text_name" />
+
+                <TextView
+                    android:id="@+id/element_users_cell_text_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/active"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/element_songs_cell_text_name"
+                    app:layout_constraintStart_toStartOf="@+id/element_songs_cell_text_name"
+                    app:layout_constraintTop_toBottomOf="@+id/element_songs_cell_text_name" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

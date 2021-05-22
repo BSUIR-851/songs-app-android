@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="safe_area_x">27dp</dimen>
+    <dimen name="element_spacing">10dp</dimen>
+    <dimen name="inner_element_spacing">5dp</dimen>
+    <dimen name="section_spacing">20dp</dimen>
+    <dimen name="button_half_spacing">5dp</dimen>
+    <dimen name="video_height">150dp</dimen>
+    <dimen name="header_font_size">20sp</dimen>
+    <dimen name="sub_header_font_size">17sp</dimen>
+    <dimen name="text_font_size">15sp</dimen>
+</resources>

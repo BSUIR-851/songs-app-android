@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_form"
+    app:startDestination="@id/formFragment">
+
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="com.morozov.songs.ui.main.songs.form.FormFragment"
+        android:label="fragment_form"
+        tools:layout="@layout/fragment_form" >
+        <action
+            android:id="@+id/action_formFragment_to_googleMapsLocationPickerActivity"
+            app:destination="@id/googleMapsLocationPickerActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/googleMapsLocationPickerActivity"
+        android:name="com.morozov.songs.ui.services.googleMapsLocationPicker.GoogleMapsLocationPickerActivity"
+        android:label="activity_google_maps_location_picker"
+        tools:layout="@layout/activity_google_maps_location_picker" />
+</navigation>

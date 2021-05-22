@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_songs_details"
+    app:startDestination="@id/songsDetailsFragment">
+
+    <fragment
+        android:id="@+id/songsDetailsFragment"
+        android:name="com.morozov.songs.ui.main.songs.details.SongsDetailsFragment"
+        android:label="fragment_songs_details"
+        tools:layout="@layout/fragment_songs_details" >
+        <action
+            android:id="@+id/action_songsDetailsFragment_to_formActivity2"
+            app:destination="@id/formActivity2" />
+    </fragment>
+    <activity
+        android:id="@+id/formActivity2"
+        android:name="com.morozov.songs.ui.main.songs.form.FormActivity"
+        android:label="activity_form"
+        tools:layout="@layout/activity_form" />
+</navigation>
